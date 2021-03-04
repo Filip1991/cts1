@@ -1,7 +1,7 @@
 package ro.ase.cts.seminar2;
 
 public abstract class BankAccount extends Account{
-	private double balance;
+	protected double balance;
 	protected String iban;
 	
 	public BankAccount() {
@@ -17,6 +17,10 @@ public abstract class BankAccount extends Account{
 	@Override
 	public double getBalance() {
 		return this.balance;
+	}
+
+	public void setBalance(double balance) {
+		this.balance = balance;
 	}
 	
 	
